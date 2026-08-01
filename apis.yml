@@ -1,8 +1,25 @@
 aid: sundae
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sundae.png
 name: Sundae
-description: 'Sundae is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Sundae is a residential real estate marketplace that buys homes directly from
+  homeowners for cash and resells them to a vetted network of property investors. Sellers get a
+  competitive as-is cash offer with no repairs, showings, or fees, flexible closings in as little
+  as 10 days, and an optional cash advance before closing; investors access off-market and
+  distressed properties through the Sundae Marketplace. Backed by QED Investors, Sundae operates a
+  consumer-facing website, an investor marketplace, and an agent referral program. It is a
+  proptech/fintech company and, as of this enrichment pass, publishes no public developer API,
+  documentation, or SDK surface.'
 url: https://raw.githubusercontent.com/api-evangelist/sundae/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Real Estate
+- Proptech
+- Marketplace
+- Homebuying
+- Investors
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +46,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://sundae.com
+  url: https://sundae.com
+- type: Blog
+  url: https://sundae.com/blog/
+- type: TermsOfService
+  url: https://sundae.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://sundae.com/privacy-policy/
+- type: DomainSecurity
+  url: security/sundae-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
